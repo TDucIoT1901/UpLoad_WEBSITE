@@ -147,3 +147,15 @@ body {
 .status-message.hidden { display: none; }
 
 footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border-color); color: var(--text-muted); }
+/* Đẩy nội dung các trang con xuống dưới thanh Navbar */
+.page-content {
+    margin-top: 100px;
+    min-height: 75vh; /* Đảm bảo footer luôn nằm ở đáy trang */
+}
+
+/* Thắp sáng mục menu hiện tại đang được chọn */
+.nav-links a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+}

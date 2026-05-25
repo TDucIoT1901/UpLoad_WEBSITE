@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="projects.html" class="active">Dự án</a></li>
+            <li><a href="skills.html">Kỹ năng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <main class="container page-content">
+        <section class="section">
+            <h2 class="section-title">Dự án nổi bật</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-badge">Embedded</div>
+                    <h3>Hệ thống vi điều khiển STM32</h3>
+                    <p>Thiết Sign mạch điều khiển, tối ưu hóa bộ nhớ và hiển thị ma trận LED 8x8 thời gian thực.</p>
+                </div>
+                <div class="project-card">
+                    <div class="card-badge">Hardware</div>
+                    <h3>Mạch nguồn Buck/Boost Converter</h3>
+                    <p>Mô phỏng, tính toán thông số kỹ thuật và thiết kế layout mạch in PCB trên Altium Designer.</p>
+                </div>
+                <div class="project-card">
+                    <div class="card-badge">Software</div>
+                    <h3>Ứng dụng phân tích dữ liệu</h3>
+                    <p>Sử dụng Python và MATLAB để xử lý tín hiệu, tự động hóa và trực quan hóa thuật toán.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Designed with <span style="color: #e74c3c;">❤</span> by Đức</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

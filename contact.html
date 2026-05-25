@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="projects.html">Dự án</a></li>
+            <li><a href="skills.html">Kỹ năng</a></li>
+            <li><a href="contact.html" class="active">Liên hệ</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <main class="container page-content">
+        <section class="section">
+            <h2 class="section-title">Kết nối với tôi</h2>
+            <div class="contact-box">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" id="name" required placeholder="Nhập tên của bạn...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tin nhắn</label>
+                        <textarea id="message" rows="4" required placeholder="Tôi có thể giúp gì cho bạn?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Gửi lời nhắn</button>
+                </form>
+                <div id="form-status" class="status-message hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Designed with <span style="color: #e74c3c;">❤</span> by Đức</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
