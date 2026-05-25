@@ -26,11 +26,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Tạo hiệu ứng mượt khi đổi màu */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
-    scroll-behavior: smooth; /* Cuộn trang mượt mà khi bấm menu */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
     display: flex; justify-content: space-between; align-items: center;
     padding: 1rem 5%;
     background-color: var(--nav-bg);
-    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ thời thượng */
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -61,7 +61,7 @@ body {
     cursor: pointer; color: var(--text-main);
 }
 
-/* Khối Hero ấn tượng */
+/* Khối Hero */
 .hero-section {
     height: 60vh;
     display: flex; justify-content: center; align-items: center;
@@ -89,7 +89,7 @@ body {
 /* CSS Grid cho các thẻ dự án */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tự co giãn theo kích thước màn hình */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -99,7 +99,7 @@ body {
     box-shadow: var(--card-shadow); transition: transform 0.3s ease;
     position: relative; overflow: hidden;
 }
-.project-card:hover { transform: translateY(-5px); } /* Hiệu ứng nhấc nhẹ lên khi di chuột */
+.project-card:hover { transform: translateY(-5px); }
 
 .card-badge {
     display: inline-block; padding: 0.25rem 0.75rem; background: rgba(49, 130, 206, 0.1);
@@ -107,6 +107,22 @@ body {
 }
 .project-card h3 { margin-bottom: 0.5rem; font-size: 1.3rem; }
 .project-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+/* Định dạng phần Kỹ năng mới nâng cấp */
+.skills-box {
+    max-width: 700px; margin: 0 auto; background-color: var(--bg-secondary);
+    padding: 2.5rem; border-radius: 12px; box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+.skill-item { margin-bottom: 1.5rem; }
+.skill-item:last-child { margin-bottom: 0; }
+.skill-info { display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-weight: 500; }
+.skill-bar { width: 100%; height: 10px; background-color: var(--bg-primary); border-radius: 5px; overflow: hidden; }
+.skill-progress { 
+    height: 100%; background: linear-gradient(90deg, var(--primary-color), #5a67d8); 
+    border-radius: 5px; animation: loadBar 1.5s ease-out forwards; 
+}
+@keyframes loadBar { from { width: 0; } }
 
 /* Định dạng Form liên hệ */
 .contact-box {
@@ -121,14 +137,8 @@ body {
     border-radius: 6px; background-color: var(--bg-primary); color: var(--text-main);
     font-size: 1rem;
 }
-.form-group input:focus, .form-group textarea:focus {
-    outline: none; border-color: var(--primary-color);
-}
-.submit-btn {
-    width: 100%; padding: 0.75rem; background-color: var(--primary-color);
-    color: white; border: none; border-radius: 6px; font-size: 1rem;
-    font-weight: bold; cursor: pointer;
-}
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); }
+.submit-btn { width: 100%; padding: 0.75rem; background-color: var(--primary-color); color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; }
 .submit-btn:hover { background-color: var(--primary-hover); }
 
 /* Thông báo trạng thái form */
