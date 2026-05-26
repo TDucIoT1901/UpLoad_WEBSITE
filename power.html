@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Dự án Nguồn Buck/Boost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="projects.html" class="active">Dự án</a></li>
+            <li><a href="skills.html">Kỹ năng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </nav>
+
+    <main class="container page-content">
+        <a href="projects.html" class="back-link">← Quay lại danh sách dự án</a>
+        
+        <article class="project-detail-box">
+            <h1>Mạch nguồn biến đổi điện áp Buck/Boost Converter</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Thời gian thực hiện: 2026 | Chuyên ngành: Điện tử công suất</p>
+            
+            <h2>1. Mục tiêu thiết kế</h2>
+            <p>Nghiên cứu, tính toán lý thuyết toán học và mô phỏng mạch nguồn xung DC-DC có khả năng ổn định điện áp đầu ra độc lập với sự thăng giáng của điện áp đầu vào (chế độ tăng áp Boost và hạ áp Buck).</p>
+
+            <h2>2. Nội dung kỹ thuật</h2>
+            <ul>
+                <li>Áp dụng định luật Kirchhoff (KVL, KCL) và cân bằng điện tích trên cuộn cảm để tính toán giá trị L, C thích hợp.</li>
+                <li>Phân tích chế độ dòng liên tục (CCM) để tối ưu dòng gợn sóng đầu ra.</li>
+                <li>Thiết kế mạch nguyên lý (Schematic) và layout mạch in hoàn chỉnh trên phần mềm <strong>Altium Designer</strong>, tối ưu đường mạch công suất (Power Traces) để tránh nhiễu và tản nhiệt tốt.</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer><p>© 2026 Designed by Đức</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

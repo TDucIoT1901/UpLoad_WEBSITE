@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Dự án STM32</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="projects.html" class="active">Dự án</a></li>
+            <li><a href="skills.html">Kỹ năng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </nav>
+
+    <main class="container page-content">
+        <a href="projects.html" class="back-link">← Quay lại danh sách dự án</a>
+        
+        <article class="project-detail-box">
+            <h1>Hệ thống vi điều khiển STM32 & Ma trận LED</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Thời gian thực hiện: 2025 | Chuyên ngành: Hệ thống nhúng</p>
+            
+            <h2>1. Tổng quan dự án</h2>
+            <p>Dự án tập trung vào việc thiết kế cấu trúc phần cứng và tối ưu hóa phần mềm điều khiển ma trận LED 16 chân kích thước 8x8. Hệ thống sử dụng vi điều khiển kiến trúc ARM Cortex-M (STM32) làm lõi xử lý chính, kết hợp IC dịch chốt để mở rộng cổng IO điều khiển quét dòng quét cột.</p>
+
+            <h2>2. Công nghệ & Linh kiện sử dụng</h2>
+            <ul>
+                <li><strong>Vi điều khiển:</strong> STM32F103C8T6 (Blue Pill).</li>
+                <li><strong>IC điều khiển phụ:</strong> 74HC595 (Shift Register) để tối ưu số chân điều khiển từ MCU.</li>
+                <li><strong>Hiển thị:</strong> Ma trận LED 8x8 (16 chân).</li>
+                <li><strong>Ngôn ngữ lập trình:</strong> C/C++ (sử dụng thư viện HAL hoặc CMSIS).</li>
+            </ul>
+
+            <h2>3. Tính năng cốt lõi</h2>
+            <ul>
+                <li>Quét và hiển thị động các ký tự chữ cái (L, I, D, P, L, A, B) theo thời gian thực một cách mượt mà, không bị nhấp nháy.</li>
+                <li>Xây dựng mảng Bitmask tối ưu hóa dung lượng bộ nhớ Flash của vi điều khiển.</li>
+                <li>Tích hợp bộ định thời (Timer Interrupt) đảm bảo tần số quét dòng ổn định ổn định.</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer><p>© 2026 Designed by Đức</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
