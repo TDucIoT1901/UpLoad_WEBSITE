@@ -209,3 +209,14 @@ footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border-c
 .back-link:hover {
     color: var(--primary-color);
 }
+/* Định dạng dòng chữ số lượt truy cập */
+.counter-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+#visit-count {
+    color: var(--primary-color);
+    font-weight: bold;
+}

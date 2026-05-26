@@ -55,3 +55,23 @@ if (contactForm && formStatus) {
         }, 4000);
     });
 }
+// --- TÍNH NĂNG 3: ĐẾM VÀ HIỂN THỊ LƯỢT TRUY CẬP ---
+const visitCountElement = document.getElementById('visit-count');
+
+if (visitCountElement) {
+    // Tạo một ID duy nhất cho trang web của bạn (ví dụ: duc-portfolio-2026)
+    const namespace = "duc-portfolio-2026";
+    const key = "homepage";
+
+    // Gọi API để tăng số lượt truy cập và lấy dữ liệu về
+    fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`)
+        .then(response => response.json())
+        .then(data => {
+            // Hiển thị số lượt truy cập lên màn hình
+            visitCountElement.textContent = data.count;
+        })
+        .catch(error => {
+            console.error("Không thể tải lượt truy cập:", error);
+            visitCountElement.textContent = "1"; // Giá trị dự phòng nếu API nghẽn
+        });
+}
